@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message</title>
+  <link rel="stylesheet" href="message.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <div class="profile">
+        <img src="hello-unscreen.gif" alt="Profile Picture" class="profile-img">
+        <h3>Five Star BiteMates</h3>
+      </div>
+      <select id="mainTopicMenu" class="topic-menu">
+        <option value="" disabled selected>Menu</option>
+        <option value="topic1">Product</option>
+        <option value="topic2">Store</option>
+        <option value="topic3">Others</option>
+      </select>
+    </div>
+    <div class="chat-box" id="chatBox">
+      <div class="message system-message">
+        Hi BiteMates! 
+      </div>
+    </div>
+    <div class="subtopics-container" id="subtopicsContainer"></div>
+  </div>
+  <script src="message.js"></script>
+</body>
+</html>

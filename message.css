@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:linear-gradient(#ec2861,pink);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .chat-container {
+    width: 700px;
+    height: 400px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .chat-header {
+    background: #ee3362;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .topic-menu {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #c2103c;
+    color: white;
+  }
+  
+  .chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    max-width: 70%;
+  }
+  
+  .system-message {
+    background: #f081a6;
+    color: #333;
+    align-self: center;
+  }
+  
+  .user-message {
+    background: #e05b99;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .ai-message {
+    background: #d46e7f;
+    color: white;
+    align-self: flex-start;
+  }
+  
+  .subtopics-container {
+    background: #df3c6d;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .subtopic-button {
+    padding: 10px 15px;
+    background: #d63c77;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .subtopic-button:hover {
+    background: #db88bb;
+  }
+  

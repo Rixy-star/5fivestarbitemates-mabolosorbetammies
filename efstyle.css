@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ body{
+    background-image: url("order-form-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#ec2861;
+    font-family:'Arvo';
+ }
+ /*Navigation Bar*/
+  nav{
+    background-color: rgba(254,220,220,0.75);
+    padding: 0;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    color: #ec2861;
+    font-size: 16px;
+  }
+  nav ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    display: flex;
+  }
+  nav ul li {
+    margin:0 0px;
+    position: relative;
+  }
+  nav ul li a{
+    color:#ec2861;
+    text-decoration: none;
+    padding: 14px 16px;
+    display:inline-block;
+    text-align:center;
+    font-size:16px;
+  }
+  nav ul li a:hover {
+    background-color: #d5e0ef;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: pink;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+    z-index:1;
+    min-width:50px;
+  }
+  .dropdown-content li a{
+    color:#ec2861;
+    padding: 12px 16px;
+    display: block;
+    text-align: center;
+    font-size:16px;
+  }
+  .dropdown-content li a:hover {
+    background:#f1f1f1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /*Form and Summary*/
+  .container {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 5px;
+    margin-left: 200px;
+    font-size: 12px;
+  }
+  
+  h2 {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: bold;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(206, 86, 106);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: pink;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #orderSummary p {
+    margin: 10px 0;
+  }
+  

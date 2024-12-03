@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product Promotions</title>
+<head>
+    <style>
+    body {
+      background-color: #fedcdb;
+      font-family:'Arvo';
+    }
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgba(254,220,219,0.75);
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a, .dropbtn{
+      display: inline-block;
+      color: #ec275f;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    li a:hover, .dropdown:hover .dropbtn {
+      background-color: #d5e0ef;
+    }
+    
+    li .dropdown {
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: pink;
+      min-width: 50px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2) ;
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: #ec275f;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+    
+    .dropdown-content a:hover {background-color: #d5e0ef;}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    </style>
+    </head>
+    
+    <style>
+    .dropbtn {
+      background-color: rgba(254,220,219,0.75);
+      color: #ec275f;
+      padding: 14px 16px;
+      font-size: 16px;
+      font-family: 'Arvo';
+      border: none;
+      cursor: pointer;
+    }
+    .dropdown-content a:hover {background-color: #d5e0ef;}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+      background-color: #d5e0ef;
+    }
+    
+    </style>
+    
+    <div class="dropdown" style="float:right;">
+      <button class="dropbtn" style="font-family:Arvo">Order Now</button>
+      <div class="dropdown-content">
+      <a href="orderform-new.html">Order Form</a>
+      <a href="payment.html">Payment</a>
+      <a href="Vouchers.html">Vouchers</a>
+      </div>
+    </div>
+    
+    <body>
+    
+    <ul>
+      <li><a href="mabolo-1.html"> Home </a></li>
+      <li><a href="about us.html"> About Us </a></li>
+      <li><a href="contact us.html"> Contact Us </a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"> Menu </a>
+         <div class="dropdown-content">
+             <a href="product.html"> Product </a>
+             <a href="menu.html"> Menu</a>
+             <a href="want to order now.html"> Want to Order Now? </a>
+         </div>
+       </li>
+    </ul>
+</head>
+
+<style>
+body {
+  background-image: url("product-bg.jpg");
+  background-size: cover;
+  padding: 5px;
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border: 3px solid #FFFFFF;
+  padding: 20px; 
+  width: 650px;
+  height: 30px;  
+}
+</style>
+</head>
+
+<link href='https://fonts.googleapis.com/css?family=Dai Banna SIL' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Ruslan Display' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
+<style>
+body {
+text-align: center
+}
+
+.p2 {
+  font-family: 'Caveat';
+  font-size: 1.5em;
+  color:#ec275f;
+}
+
+h2 {
+  font-size: 1.975em;
+  font-family: 'Ruslan Display';
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color:#ec275f;
+}
+
+p {
+  font-size: 1.25em;
+  font-family:'Dai Banna SIL';
+  color: #ec275f;
+}
+
+#myDIV {
+  width: 90px;
+  height: 40px;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+ 90% {font-size: 30px;}
+}
+.desc {
+  padding: 20px;
+  text-align: center;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 20%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column.side, .column.middle {
+    width: 100%;
+}
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="column left side">
+    <div id="myDIV">
+    <h2>IceCream</h2>
+    </div>
+<p>The creamiest Mabolo Ice cream in Daet, Camarines Norte is now available! Come visit the physical store at Brgy. 6 Bagasbas Road Daet, Camarines Norte</p>
+  <div class="dropdown">
+  <img src="rixy-icecream.jfif" alt="Creamiest" width="150" height="100">
+  <div class="dropdown-content">
+  <img src="rixy-icecream.jfif" alt="Creamiest" width="200" height="150">
+  <div class="desc">"The creamiest mabolo ice cream!Order now and enjoy a mouthful tub of flavor.</div>
+  </div> 
+  </div>
+</div>
+
+  <div class="column middle">
+    <h2>Product Description</h2>
+    <p><p id="rcorners2" class="p2">Mabolo Sorbetammies proudly offers the newest flavor of ice cream, Mabolo!</p>
+    <p>Five Star BiteMates’ product line, Mabolo Sorbetammies, will introduce an extraordinary snack with its finest quality and nutritious ice cream flavor to customers. 
+       With its nutritious and flavorful tub of ice cream, the business guarantees to deliver a customer-friendly product at a reasonable price.</p>
+       
+    <p>Mabolo Sorbetammies features a pink hue inspired by the mabolo fruit, highlighting its natural flavor. Made in partnership with local farmers for sustainable sourcing, it reinvents traditional Filipino sorbetes with nutritious mabolo and tasty gummies. Offered in 12oz tubs with a spoon, it’s perfect for dine-in or take-out, catering to customers seeking comfort, innovation, and health-conscious choices.</p>
+  </div>
+  
+  <div class="column side">
+  <div id="myDIV">
+  <h2>Surprises?</h2>
+     </div>
+    
+    <p>Did you know that the name Mabolo Sorbetammies comes from the root words; mabolo, sorbetes, tamis and gummies!</p>
+    <div class="dropdown">
+    <img src="maboloice-monatge.jfif" alt="Creamiest" width="130" height="90">
+    <div class="dropdown-content">
+    <img src="mabolo-gummies.jfif" alt="Creamiest" width="250" height="150">
+    <div class="desc">"Gummies made especially for you!</div>
+    </div>
+  </div>
+</div>
+  
+</body>
+</html>

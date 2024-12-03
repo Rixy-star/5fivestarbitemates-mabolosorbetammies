@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form</title>
+  <link rel="stylesheet" href="efstyle.css">
+  </head>
+<body>
+    <!--Navigation Bar-->
+    <nav>
+        <ul class="nav-left">
+            <li><a href="#"> Home </a></li>
+            <li><a href="#"> About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li class="dropdown">
+                <a href="#"> Menu</a>
+                <ul class="dropdown-content">
+                    <li><a href="#"> Product</a></li>
+                    <li><a href="#"> Menu</a></li>
+                    <li><a href="#"> Want to Order Now?</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav-right">
+            <li class="dropdown">
+                <a href="#"> Order Now</a>
+                <ul class="dropdown-content">
+                    <li><a href="#"> Order Form</a></li>
+                    <li><a href="#"> Payment</a></li>
+                    <li><a href="#"> Vouchers</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+  <div class="container">
+    <!-- Payment Form -->
+    <div id="formContainer">
+      <h2>Order Form</h2>
+      <form id="paymentForm">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" required>
+
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" required>
+
+        <label for="address">Address</label>
+        <textarea id="address" rows="1" required></textarea>
+
+        <label for="product">Product</label>
+        <select id="product" required>
+          <option value="Product A">1 tub (12oz with spoon)</option>
+          <option value="Product B">2 tubs (120z with spoon)</option>
+          <option value="Product C">3 tubs (12oz with spoon)</option>
+          <option value="Product C">4 tubs (12oz with spoon in an insulated container)</option>
+          <option value="Product C">5 tubs (12oz with spoon in an insulated container)</option>
+        </select>
+
+        <label for="paymentMode">Mode of Payment</label>
+        <select id="paymentMode" required>
+          <option value="E-wallet">E-wallet</option>
+          <option value="Cash on Delivery">Cash on Delivery</option>
+        </select>
+
+        <!-- GCash Number Field -->
+        <div id="gcashField" class="hidden">
+          <label for="gcashNumber">GCash Number</label>
+          <input type="text" id="gcashNumber" placeholder="Enter GCash number">
+        </div>
+
+        <label for="deliveryService">Delivery Service</label>
+        <select id="deliveryService" required>
+          <option value="Standard">AngCash</option>
+          <option value="Express">Daet Pabili</option>
+          <option value="Overnight">Daet Pilivery Races</option>
+          <option value="Overnight">Food Panda</option>
+        </select>
+
+        <label for="voucher">Voucher (if applicable)</label>
+        <input type="text" id="voucher" placeholder="Enter voucher code">
+
+        <label for="message">Message (Optional)</label>
+        <textarea id="message" rows="2" placeholder="Enter a message"></textarea>
+
+        <button type="button" id="submitButton">Submit</button>
+      </form>
+    </div>
+
+    <!-- Order Summary -->
+    <div id="orderSummary" class="hidden">
+      <h2>Order Summary</h2>
+      <p><strong>Name:</strong> <span id="summaryName"></span></p>
+      <p><strong>Address:</strong> <span id="summaryAddress"></span></p>
+      <p><strong>Product:</strong> <span id="summaryProduct"></span></p>
+      <p><strong>Payment Mode:</strong> <span id="summaryPayment"></span></p>
+      <p id="summaryGcash" class="hidden"><strong>GCash Number:</strong> <span id="summaryGcashNumber"></span></p>
+      <p><strong>Delivery Service:</strong> <span id="summaryDelivery"></span></p>
+      <p id="summaryVoucher" class="hidden"><strong>Voucher:</strong> <span id="summaryVoucherCode"></span></p>
+      <p id="summaryMessage" class="hidden"><strong>Message:</strong> <span id="summaryOrderMessage"></span></p>
+    </div>
+  </div>
+  <script src="efjava.js"></script>
+</body>
+</html>

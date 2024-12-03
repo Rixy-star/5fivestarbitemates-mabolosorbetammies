@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Menu</title>
+<style>
+div.static {
+  position: static;
+  border: 0px solid #73AD21;
+}
+</style>
+</head>
+
+<style>
+body {
+  font-family: 'Arvo';
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: white;
+  background-color: rgba(242,84,119,0.75);
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #f25477;
+}
+
+li .dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: pink;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2) ;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {background-color: #f25477;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+
+<style>
+.dropbtn {
+  background-color: rgba(242,84,119,0.75);
+  color: white;
+  font-family:'Arvo';
+  padding: 14px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content a:hover {background-color: #f25477;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f25477;
+}
+
+</style>
+
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">Order Now</button>
+  <div class="dropdown-content">
+  <a href="orderform-new.html">Order Form</a>
+  <a href="payment.html">Payment</a>
+  <a href="Vouchers.html">Vouchers</a>
+  </div>
+</div>
+
+<body>
+
+<ul>
+  <li><a href="mabolo-1.html"> Home </a></li>
+  <li><a href="about us.html"> About Us </a></li>
+  <li><a href="contact us.html"> Contact Us </a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"> Menu </a>
+     <div class="dropdown-content">
+         <a href="product.html"> Product </a>
+         <a href="menu.html"> Menu</a>
+         <a href="want to order now.html"> Want to Order Now? </a>
+     </div>
+   </li>
+</ul>
+
+<style>
+body {
+  background-image:url("menu-bg.png");
+  background-size:cover;
+}
+</style>
+</head>
+
+
+<head>
+<title>Menu of FSB</title>
+  <h1><marquee width="100%" behavior="alternate" bgcolor="#d5e0ef">
+The Newest Ice Cream in Town!
+</marquee></h1>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Frijole' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Jacques Francois' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
+<style>
+    h1{
+        font-family:'Frijole';
+        color: #ec275f;
+        text-shadow: 2px 2px white;
+        letter-spacing: 2px;
+    }
+</style>
+
+<style>
+div.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 3px solid #ccc;
+  float: left;
+  width: 250px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 250px;
+  height: 300px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family:'Jacques Francois';
+  color: #ea5376;
+  font-size: 13px;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="center">
+
+<div class="gallery">
+  <a target="_blank" href="https://i.pinimg.com/736x/0d/46/15/0d46156fc20a9e0b0427200bb0eda6d1.jpg">
+    <img src="https://i.pinimg.com/736x/0d/46/15/0d46156fc20a9e0b0427200bb0eda6d1.jpg" alt="Five Star BiteMates' Mabolo Sorbetammies" width="600" height="400">
+  </a>
+  <div class="desc">Five Star BiteMates' Mabolo Sorbetammies</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://i.pinimg.com/736x/b9/b9/cc/b9b9ccd466a01cd50f4d6301f4df0f81.jpg">
+    <img src="https://i.pinimg.com/736x/b9/b9/cc/b9b9ccd466a01cd50f4d6301f4df0f81.jpg" alt="120z Tub of Ice Cream" width="600" height="400">
+  </a>
+  <div class="desc">Enjoy the creamiest mabolo ice cream in 350 ml or 12oz tub. With every scoop and bite, you'll reach the star with the experience</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://i.pinimg.com/736x/99/5d/6b/995d6b96e830940aff5964b7ab7c7b53.jpg">
+    <img src="https://i.pinimg.com/736x/99/5d/6b/995d6b96e830940aff5964b7ab7c7b53.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">For only 142 pesos you'll get the sweetest taste that you've never experienced before!</div>
+</div>
+
+</div>
+</body>
+</html>
